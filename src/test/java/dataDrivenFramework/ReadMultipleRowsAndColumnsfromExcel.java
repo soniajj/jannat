@@ -26,9 +26,7 @@ public class ReadMultipleRowsAndColumnsfromExcel {
 		 2. workbook wb = new XSSFWorkbook(ab);  (this method for .xlsx.)*/
 		   Workbook wb = new XSSFWorkbook(bc); 
 		  Sheet ws = wb.getSheet("Retesting");//Method for get the sheet path.
-		  
-		
-			  
+		  //Read multiple row,coloumn, cell from excel sheet we have to use For loop script.	  
 		  for (int i = 1; i < 8; i++) {
 			Row R = ws.getRow(1); // method for get the row number.
 			Cell UserName = R.getCell(0); //method for get the username.
