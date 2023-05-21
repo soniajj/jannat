@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="dataDrivenFramework.WriteTheTestData"/>
+      <class name="dataDrivenFramework.ReadMultipleRowsAndColumnsfromExcel"/>
+      <class name="dataDrivenFramework.Login_pageAssign13"/>
+      <class name="testsenarios.Assignment4_1"/>
+      <class name="testsenarios.Testdemo5"/>
+      <class name="testsenarios.Testdemo6"/>
+      <class name="testsenarios.Testdemo3"/>
+      <class name="testsenarios.Testdemo4"/>
+      <class name="testsenarios.Testdemo16"/>
+      <class name="testsenarios.Testdemo1"/>
+      <class name="testsenarios.Testdemo2"/>
+      <class name="testsenarios.Testdemo17"/>
+      <class name="testsenarios.Testdemo18"/>
+      <class name="testsenarios.NewTest"/>
+      <class name="testsenarios.Testdemo12"/>
+      <class name="testsenarios.Testdemo13"/>
+      <class name="testsenarios.Testdemo14"/>
+      <class name="testsenarios.Testdemo15"/>
+      <class name="testsenarios.Testdemo9"/>
+      <class name="testsenarios.Testdemo7"/>
+      <class name="testsenarios.Testdemo10"/>
+      <class name="testsenarios.Testdemo8"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

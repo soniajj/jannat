@@ -1,6 +1,7 @@
 package dataDrivenFramework;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -41,6 +42,27 @@ public class ReadMultipleRowsAndColumnsfromExcel {
 			 driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")).click();
 			Thread.sleep(2000);
 			//driver.quit();
+			if(driver.findElements(null).size()>0) {
+				System.out.println("Given creadentials were valid");
+				//results="pass";
+			}
+			else {
+				System.out.println("Given creadentials were in-valid");
+				//results="fail";
+
+			}
+			Cell f = R.createCell(2) ;
+			
+			  f.setCellValue("results");
+			
+			FileOutputStream cd = new FileOutputStream(".\\LoginRetesringExcelSheet.xlsx");
+			  
+			wb.write(cd);
+			  wb.close();
+			
+			
+			
+			
 			
 		}
 	  
